@@ -1,0 +1,109 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+a,button{
+    all: unset;
+    cursor: pointer;
+}
+html, body{
+    font-family: sans-serif;
+}
+
+
+.btns{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+.btns button{
+    padding: 7px 15px;
+    background: #3498db;
+    background-image: linear-gradient(to right top, #051937, #00476e, #007b9f, #00b3bf, #12ebce);
+    color: #ffffffd3;
+    border: none;
+    font-size: 14px;
+    border-radius: 5px;
+    transition: 1s ease;
+}
+.btns button:hover{
+    color: #fff;
+}
+
+.modal-container{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #00000052;
+    justify-content: center;
+    align-items: center;
+}
+.modal{
+    margin: 2%;
+    background-color: #fff;
+    box-shadow: 0 0 10px #0000004d;
+    padding: 20px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    animation: fadeIn 0.3s ease-in-out;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.modal h2{
+    color: #007b9f;
+}
+.modal p{
+    color: #000000b1;
+    font-size: 14px;
+}
+.modal button{
+    width: max-content;
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    font-size: 12px;
+    border-radius: 5px;
+}
+
+/* footer css */
+footer{
+    margin-top: 20px;
+    padding: 20px;
+    border-top: 1px solid #0000001f;
+    text-align: center;
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+}
+footer span{
+    font-weight: 600;
+    color: #00000084;
+}
+footer a{
+    letter-spacing: 1px;
+    font-weight: 700;
+    color: #000000c3;
+}
+footer a:hover{
+    text-decoration: underline;
+}
